@@ -1,6 +1,6 @@
 'use strict';
 
-require('node-fetch');
+const fetch = require('node-fetch');
 
 const version = "0.0.0";
 
