@@ -1,6 +1,6 @@
 import * as utils from './utils.js'
 import { AbortableAsyncIterator, parseJSON, post } from './utils.js'
-import 'whatwg-fetch'
+import 'node-fetch'
 
 import type {
   ChatRequest,
