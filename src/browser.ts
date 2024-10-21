@@ -1,6 +1,6 @@
 import * as utils from './utils.js'
 import { AbortableAsyncIterator, parseJSON, post } from './utils.js'
-import 'node-fetch'
+const fetch = require('node-fetch');
 
 import type {
   ChatRequest,
@@ -39,7 +39,7 @@ export class Ollama {
       this.config.host = utils.formatHost(config?.host ?? 'http://127.0.0.1:11434')
     }
 
-    this.fetch = fetch
+    this.fetch = fe tch
     if (config?.fetch != null) {
       this.fetch = config.fetch
     }
